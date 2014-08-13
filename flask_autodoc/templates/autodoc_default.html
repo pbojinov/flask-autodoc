@@ -4,7 +4,7 @@
             {% if title is defined -%}
                 {{title}}
             {% else -%}
-                Documentation
+                API Documentation
             {% endif -%}
         </title>
         <style>
@@ -16,6 +16,7 @@
 
             body {
                 margin: 10px;
+                color: #31404A;
             }
 
             div.mapping {
@@ -42,6 +43,10 @@
             ul.arguments li:last-child:after { content: ""; }
 
             .docstring:before { content: "Description: "; }
+
+            ul.arguments {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -49,7 +54,7 @@
             {% if title is defined -%}
                 {{title}}
             {% else -%}
-                Documentation
+                API Documentation
             {% endif -%}
         </h1>
 
